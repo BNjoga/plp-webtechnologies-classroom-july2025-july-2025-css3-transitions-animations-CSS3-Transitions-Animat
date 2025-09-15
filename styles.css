@@ -1,0 +1,41 @@
+/* 🌟 Part 1: CSS Transitions and Animations */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Button Hover Effect */
+#hoverBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #4caf50;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease, transform 0.3s ease;
+}
+
+#hoverBtn:hover {
+  background: #45a049;
+  transform: scale(1.1);
+}
+
+/* Box for Animations */
+.box {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  margin: 30px auto;
+  transition: transform 1s ease;
+}
+
+/* Keyframe Animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
